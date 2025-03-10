@@ -143,7 +143,6 @@ while ($row=mysqli_fetch_array($ret))
 
 
 ?>
-
 						    	
 		<div class="item">
 			<div class="products">
