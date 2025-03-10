@@ -13,11 +13,11 @@ if($count==0){
 $query=mysqli_query($con,"insert into users(name,email,contactno,password) values('$name','$email','$contactno','$password')");
 if($query)
 {
-    echo "<script>alert('You are successfully register');</script>";
+    echo "<script>alert('You have been Registered Successfuly');</script>";
     echo "<script type='text/javascript'> document.location ='login.php'; </script>";
 }
 else{
-echo "<script>alert('Not register something went worng');</script>";
+echo "<script>alert('Not registered something went worng');</script>";
     echo "<script type='text/javascript'> document.location ='signup.php'; </script>";
 } } else{
  echo "<script>alert('Email id already registered with another accout. Please try  with another email id.');</script>";
