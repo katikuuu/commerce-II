@@ -101,7 +101,7 @@ return false;
 }
 else if(document.chngpwd.newpass.value!= document.chngpwd.cnfpass.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Passwords Do Not Match !");
 document.chngpwd.cnfpass.focus();
 return false;
 }
@@ -116,9 +116,11 @@ return true;
 	<!-- ============================================== TOP MENU ============================================== -->
 <?php include('includes/top-header.php');?>
 <!-- ============================================== TOP MENU : END ============================================== -->
+<?php include('includes/menu-bar.php');?>
+
 <?php include('includes/main-header.php');?>
 	<!-- ============================================== NAVBAR ============================================== -->
-<?php include('includes/menu-bar.php');?>
+
 <!-- ============================================== NAVBAR : END ============================================== -->
 
 </header>

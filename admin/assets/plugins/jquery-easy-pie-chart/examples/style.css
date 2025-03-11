@@ -1,6 +1,6 @@
 body {
     font: 13px/1.4 'Helvetica Neue', 'Helvetica','Arial', sans-serif;
-    color: #333;
+    color: #000000;
 }
 
 .container {
@@ -25,7 +25,7 @@ a {
 .percentage,
 .label {
     text-align: center;
-    color: #333;
+    color: #000000;
     font-weight: 100;
     font-size: 1.2em;
     margin-bottom: 0.3em;
@@ -38,11 +38,11 @@ a {
 }
 
 .credits a {
-    color: #333;
+    color: #000000;
 }
 
 .dark {
-    background: #333;
+    background: #000000;
 }
 
 .dark .percentage-light,

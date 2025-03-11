@@ -70,7 +70,7 @@
   -ms-text-size-adjust: 100%;
 }
 .note-editor a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #000000;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1037,7 +1037,7 @@
 .note-editor input[type="file"]:focus,
 .note-editor input[type="radio"]:focus,
 .note-editor input[type="checkbox"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #000000;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2755,7 +2755,7 @@
   transition: background-position 0.1s linear;
 }
 .note-editor .btn:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #000000;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }

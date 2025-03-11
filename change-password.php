@@ -62,7 +62,7 @@ return false;
 }
 else if(document.chngpwd.newpass.value!= document.chngpwd.cnfpass.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Passwords Do Not Match !");
 document.chngpwd.cnfpass.focus();
 return false;
 }

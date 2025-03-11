@@ -42,7 +42,7 @@ function valid()
 {
  if(document.passwordrecovery.inputPassword.value!= document.passwordrecovery.cinputPassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Passwords Do Not Match !");
 document.passwordrecovery.cinputPassword.focus();
 return false;
 }

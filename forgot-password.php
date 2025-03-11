@@ -87,7 +87,7 @@ function valid()
 {
  if(document.register.password.value!= document.register.confirmpassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Passwords Do Not Match !");
 document.register.confirmpassword.focus();
 return false;
 }

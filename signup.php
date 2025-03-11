@@ -17,7 +17,7 @@ if($query)
     echo "<script type='text/javascript'> document.location ='login.php'; </script>";
 }
 else{
-echo "<script>alert('Not registered something went worng');</script>";
+echo "<script>alert('Not registered something went wrong');</script>";
     echo "<script type='text/javascript'> document.location ='signup.php'; </script>";
 } } else{
  echo "<script>alert('Email id already registered with another accout. Please try  with another email id.');</script>";

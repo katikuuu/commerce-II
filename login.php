@@ -12,10 +12,10 @@ $password=md5($_POST['password']);
 $query=mysqli_query($con,"insert into users(name,email,contactno,password) values('$name','$email','$contactno','$password')");
 if($query)
 {
-	echo "<script>alert('You are successfully register');</script>";
+	echo "<script>alert('You have been Registered Successfuly');</script>";
 }
 else{
-echo "<script>alert('Not register something went worng');</script>";
+echo "<script>alert('Not registered something went wrong');</script>";
 }
 }
 // Code for User login
@@ -34,8 +34,14 @@ $_SESSION['username']=$num['name'];
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=1;
 $log=mysqli_query($con,"insert into userlog(userEmail,userip,status) values('".$_SESSION['login']."','$uip','$status')");
-header("location:my-cart.php");
+header("location:index.php");
+
+
+
 exit();
+
+
+
 }
 else
 {
@@ -52,6 +58,7 @@ exit();
 
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -106,7 +113,7 @@ function valid()
 {
  if(document.register.password.value!= document.register.confirmpassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Passwords Do Not Match !");
 document.register.confirmpassword.focus();
 return false;
 }
@@ -142,9 +149,10 @@ error:function (){}
 	<!-- ============================================== TOP MENU ============================================== -->
 <?php include('includes/top-header.php');?>
 <!-- ============================================== TOP MENU : END ============================================== -->
+<?php include('includes/menu-bar.php');?>
 <?php include('includes/main-header.php');?>
 	<!-- ============================================== NAVBAR ============================================== -->
-<?php include('includes/menu-bar.php');?>
+
 <!-- ============================================== NAVBAR : END ============================================== -->
 
 </header>

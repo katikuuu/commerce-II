@@ -29,7 +29,9 @@ while($row=mysqli_fetch_array($sql))
 			<?php } ?>
 
 			<li class="dropdown yamm">
-				<a href="admin/" style="color:#000"> Admin Login</a>
+
+            <li><a href="insert-product.php" style="color:#000"></i>Add Products </a></li>
+				<!-- <a href="admin/" style="color:#000"> Admin Loginn</a> -->
 			
 			</li>
 		</ul><!-- /.navbar-nav -->
